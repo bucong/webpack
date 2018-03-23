@@ -2,7 +2,7 @@
   "name": "webpack",
   "version": "1.0.0",
   "description": "webpack学习",
-  "main": "index.js",
+  "main": "",
   "scripts": {
     "server": "webpack-dev-server",
     "build": "webpack"
@@ -11,12 +11,12 @@
     "type": "git",
     "url": "git+https://github.com/bucong/webpack.git"
   },
-  "author": "",
+  "author": "bucong",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/bucong/webpack/issues"
   },
-  "homepage": "https://github.com/bucong/webpack#readme",
+  "homepage": "https://github.com/bucong/webpack",
   "devDependencies": {
     "autoprefixer": "^8.2.0",
     "babel-core": "^6.26.0",

@@ -5,6 +5,7 @@ const htmlPlugin = require('html-webpack-plugin');
 const extractTextPlugin = require("extract-text-webpack-plugin");
 const glob = require('glob');
 const PurifyCSSPlugin = require("purifycss-webpack");
+const copyWebpackPlugin= require("copy-webpack-plugin");
 
 var website={
 	publicPath: 'http://localhost:8088/'
@@ -69,7 +70,11 @@ module.exports={
 		new extractTextPlugin("css/style.css"),
 		new PurifyCSSPlugin({
        		 paths: glob.sync(path.join(__dirname, 'src/*.html')),
-        })
+        }),
+        new copyWebpackPlugin([{
+	        from:__dirname+'/src/public',
+	        to:'./public'
+	    }])
 	],
 	mode:'development',
 	devServer:{

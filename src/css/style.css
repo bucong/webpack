@@ -1,0 +1,18 @@
+body{
+	background-color: deepskyblue;
+}
+#hello{
+	color: #f00;
+	font-size: 50px;
+	box-shadow: 10px 10px 6px rgba(0,0,0,.5);
+	transform: rotate(45deg);
+}
+#tupian{
+	width: 270px;
+	height: 136px;
+	background: url(../images/news.jpg);
+}
+.aaa{
+	display: flex;
+	color: #ccc;
+}
